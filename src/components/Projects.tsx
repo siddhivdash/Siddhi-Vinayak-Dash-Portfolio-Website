@@ -4,6 +4,30 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "SkyTrack AI",
+    description: "Advanced drone-based vehicle detection and tracking system designed for real-time traffic monitoring and urban analytics.",
+    achievements: [
+      "Achieved 94% mAP for vehicle detection using YOLOv8 optimized for aerial perspectives",
+      "Integrated ByteTrack algorithm for robust multi-object tracking across varying altitudes",
+      "Developed custom analytics dashboard for traffic flow density and speed estimation"
+    ],
+    technologies: ["YOLOv8", "ByteTrack", "Python", "OpenCV", "Drone-Tech"],
+    github: "https://github.com/siddhivdash/SkyTrack-AI---Drone-based-vehicle-detection-and-tracking-system.  ",
+    period: "Feb 2026"
+  },
+  {
+    title: "EmailIQ",
+    description: "A privacy-first, local AI assistant for Gmail that automates categorization, summarization, and smart replies using local LLMs.",
+    achievements: [
+      "Built a secure local processing engine using Ollama to ensure zero data leakage",
+      "Engineered automated email summarization and priority scoring with Mistral-7B",
+      "Integrated LangChain for intelligent context-aware drafting of replies"
+    ],
+    technologies: ["Ollama", "Mistral", "LangChain", "Python", "Gmail API"],
+    github: "https://github.com/siddhivdash/EmailIQ-Local-AI-Gmail-Assistant",
+    period: "Jan 2026"
+  },
+  {
     title: "VisLang Multimodal AI",
     description: "Built a vision-language system integrating YOLOv8, Meta's SAM, and local LLMs (LLaVA) for real-time object detection and interactive image segmentation.",
     achievements: [
@@ -12,7 +36,7 @@ const projects = [
       "Containerized with Docker, reducing deployment time by 80% across environments"
     ],
     technologies: ["Python", "FastAPI", "YOLOv8", "SAM", "Ollama", "LLaVA", "Docker"],
-    github: "https://github.com/siddhivdash/VISLANG-Real-Time-Vision-Language-Assistant", // Update if different
+    github: "https://github.com/siddhivdash/VISLANG-Real-Time-Vision-Language-Assistant",
     period: "Dec 2025"
   },
   {
@@ -24,7 +48,7 @@ const projects = [
       "Deployed Flask REST API with 99.8% uptime, processing 500+ daily predictions"
     ],
     technologies: ["Python", "Scikit-learn", "Flask", "REST APIs", "MySQL", "Pandas"],
-    github: "https://github.com/siddhivdash/Diamond-Price-Prediction", // Update if different
+    github: "https://github.com/siddhivdash/Diamond-Price-Prediction",
     period: "Jun 2025"
   },
   {
@@ -36,7 +60,7 @@ const projects = [
       "Optimized MySQL schema for sub-millisecond query response on 10,000+ records"
     ],
     technologies: ["Python", "Scikit-learn", "Pandas", "SQL", "MySQL"],
-    github: "https://github.com/siddhivdash/Diabetes-Prediction-By-Testing-Different-ML-Algorithm", // Update if different
+    github: "https://github.com/siddhivdash/Diabetes-Prediction-By-Testing-Different-ML-Algorithm",
     period: "May 2025"
   }
 ];

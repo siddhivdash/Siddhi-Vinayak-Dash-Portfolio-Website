@@ -5,6 +5,15 @@ import { Button } from "./ui/button";
 
 const certifications = [
   {
+    title: "SAP Certified Associate - SAP Generative AI Developer",
+    issuer: "SAP",
+    date: "2026",
+    description: "Validated expertise in developing and deploying generative AI applications using SAP AI Core and SAP Generative AI Hub on the Business Technology Platform.",
+    skills: ["SAP AI Core", "SAP BTP", "Generative AI Hub"],
+    icon: "/placeholder.svg", 
+    verifyUrl: "https://www.credly.com/badges/eb7675fd-03a4-424e-aa7e-ffafd439da1e/public_url"
+  },
+  {
     title: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
     issuer: "Oracle Cloud Infrastructure",
     date: "2025",
@@ -25,7 +34,7 @@ const certifications = [
   {
     title: "Introduction to Machine Learning",
     issuer: "IIT Kharagpur (NPTEL)",
-    date: "2025", // Updated to 2025
+    date: "2025",
     description: "Mastered 12+ core algorithms across supervised and unsupervised learning paradigms.",
     skills: ["Supervised Learning", "Unsupervised Learning", "Algorithms"],
     icon: "/nptel-logo.png",
@@ -44,7 +53,7 @@ const Certifications = () => {
           Industry-recognized credentials validating expertise in Cloud AI, Data Science, and Machine Learning.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {certifications.map((cert, index) => (
             <Card key={index} className="p-6 flex flex-col card-hover bg-card border-border h-full relative overflow-hidden">
               <div className="absolute top-0 right-0 p-4 opacity-10">
@@ -71,7 +80,6 @@ const Certifications = () => {
                     </div>
                   ))}
                 </div>
-                {/* Updated href to use cert.verifyUrl */}
                 <Button variant="outline" size="sm" className="w-full group" asChild>
                   <a href={cert.verifyUrl} target="_blank" rel="noopener noreferrer">
                     Verify Credential <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
